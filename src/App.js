@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Router } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -12,6 +12,8 @@ import Team from "./pages/Team";
 import Testimonial from "./pages/Testimonial";
 import Error from "./pages/Error";
 import Contact from "./pages/Contact";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 import jQuery from "jquery";
 
 export default function App() {
@@ -29,6 +31,8 @@ export default function App() {
         <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/error" element={<Error />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
     </div>
